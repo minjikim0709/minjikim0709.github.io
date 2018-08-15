@@ -1,8 +1,620 @@
+
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Minji Kim</h1>
-<p>Hosted with GitHub Pages.</p>
-<img src="images/mj.jpg" alt="mj" />
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minji Kim</title>
+    <link rel="icon" href="images/mjfav.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  </head>
+  <style type="text/css">
+  	body {
+  		font-family: 'Titillium Web', sans-serif;
+  	}
+
+  	.has-image-centered {
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+	.main-card {
+	  background-image: url(images/44.JPG);
+	  background-size:     cover; 
+	  background-repeat: no-repeat;
+	}
+
+	.main-card-text {
+		text-align: left;
+	}
+
+	.minji-banner {
+		color: #363636!important;
+	}
+
+	.work-experience-detail {
+		text-align: left;
+	}
+
+	.yonsei-logo {
+		width: 250px;
+	}
+
+	.yonsei-box {
+		margin-bottom: 30px!important;
+	}
+  </style>
+  <body>
+
+
+	<!-- HEADER -->
+  	<div class="container">
+
+
+
+		<section class="hero is-medium">
+			<!-- HEADER -->
+	  		<div class="hero-head">
+	  		  	<!-- NAV -->
+			  	<nav class="navbar" role="navigation" aria-label="main navigation">
+				  <div class="navbar-brand">
+				    <a class="navbar-item" href="https://bulma.io">
+				    	<span class="icon has-text-danger">
+			            <i class="fas fa-heart"></i>
+			          </span>
+				      <span>Minji "Smile" Kim</span>
+				    </a>
+
+				    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+				      <span aria-hidden="true"></span>
+				      <span aria-hidden="true"></span>
+				      <span aria-hidden="true"></span>
+				    </a>
+
+				  </div>
+				  <div class="navbar-menu is-hidden-desktop" id="navMenu">
+
+					  <div class="navbar-end">
+
+					      <a class="navbar-item" onclick="showTab('smile'); return false;">
+					        <span class="icon is-small"><i class="fas fa-heart" aria-hidden="true"></i></span>
+					        <span>Smile</span>
+					      </a>
+						  <a class="navbar-item" onclick="showTab('work'); return false;">
+						  	<span class="icon is-small"><i class="fas fa-chalkboard" aria-hidden="true"></i></span>
+					        <span>Work</span>
+					      </a>
+					      <a class="navbar-item" onclick="showTab('education'); return false;">
+						  	<span class="icon is-small"><i class="fas fa-graduation-cap" aria-hidden="true"></i></span>
+			        		<span>Education</span>
+					      </a>
+					      <!-- <a class="navbar-item">
+						  	<span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
+			        		<span>Interests</span>
+					      </a> -->
+					  </div>
+					</div>
+
+				</nav>
+			</div>
+
+		  <div class="hero-body">
+		  	<div class="container has-text-centered">
+		  		<figure class="image is-128x128 has-image-centered">
+				  <img class="is-rounded" src="images/mj.jpeg">
+				</figure>
+				<!-- <h1 class="title">
+					
+			        Minji Kim
+			      </h1> 
+			      <h2 class="subtitle">
+			        Sailing
+			      </h2> -->
+		  	</div>
+		  </div>
+
+		  <!-- Hero footer: will stick at the bottom -->
+		  <div class="hero-foot">
+		    
+		  </div>
+
+		  <!-- <div class="hero-foot">
+		    <nav class="tabs is-boxed is-fullwidth">
+		      <div class="container">
+		        <ul>
+		          <li class="is-active"><a>Overview</a></li>
+		          <li><a>Modifiers</a></li>
+		          <li><a>Grid</a></li>
+		          <li><a>Elements</a></li>
+		          <li><a>Components</a></li>
+		          <li><a>Layout</a></li>
+		        </ul>
+		      </div>
+		    </nav>
+		  </div> -->
+
+
+
+		</section>
+  	</div>
+
+  	<!-- TABS -->
+	<section class="section has-text-centered is-hidden-mobile">
+		<div class="container">
+	  		<div class="tabs is-centered">
+			  <ul>
+			  	<li class="nav-tabs is-active">
+			      <a onclick="showTab('smile'); return false;">
+			        <span class="icon is-small"><i class="fas fa-heart" aria-hidden="true"></i></span>
+			        <span>Smile</span>
+			      </a>
+			    </li>
+			  	<li class="nav-tabs">
+			      <a onclick="showTab('work'); return false;">
+			        <span class="icon is-small"><i class="fas fa-chalkboard" aria-hidden="true"></i></span>
+			        <span>Work</span>
+			      </a>
+			    </li>
+			    <li class="nav-tabs">
+			      <a onclick="showTab('education'); return false;">
+			        <span class="icon is-small"><i class="fas fa-graduation-cap" aria-hidden="true"></i></span>
+			        <span>Education</span>
+			      </a>
+			    </li>
+			    <!-- <li>
+			      <a>
+			        <span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
+			        <span>Interests</span>
+			      </a>
+			    </li> -->
+			  </ul>
+			</div>
+		</div>	
+	</section>
+
+
+	<!-- SMILESOON -->
+	<section class="section has-text-centered smile-tabs smile-tabs-smile">
+		<div class="container">
+			<div class="tile is-ancestor">
+			  <div class="tile is-parent">
+			    <article class="tile is-child notification message is-info">
+			      <p class="title minji-banner">Minji Kim</p>
+			      <p class="subtitle minji-banner">What is up?</p>
+			      <div class="content minji-banner">
+			        <p>
+			        	Wife, Paul Cho Hello Menlo Park
+
+
+			        </p>
+			      </div>
+			    </article>
+			  </div>
+			</div>
+
+			<div class="tile is-ancestor">
+			  <div class="tile is-parent">
+			    <article class="tile is-child box main-card">
+		    	  <p class="title has-text-white main-card-text"><i class="fas fa-palette"></i></p>
+			      <p class="title has-text-white main-card-text">Artist</p>
+			      <p class="subtitle">
+			      	<br/>
+			      </p>
+			      <div class="content">
+			      </div>
+			    </article>
+			  </div>
+			  <div class="tile is-parent">
+			    <article class="tile is-child box">
+			      <p class="title"><i class="fas fa-glasses"></i></p>
+			      <p class="title">Product Manager</p>
+			      <p class="subtitle">
+			      	<br/>
+			      </p>
+			      <div class="content">
+			        <p>
+			        	Language: FEnglish | Korean <br/>
+
+			        </p>
+			        <p>
+			        	Design: exposure to HTML, CSS, and Photoshop <br/>
+
+			        </p>
+			        <p>
+						Computer Skills: MS Office | JIRA, Atlassian Wiki <br/>
+
+			        </p>
+			        <p>
+						Data: Google Analytics, exposure to SQL <br/>
+						
+			        </p>
+			        <p>
+						Interests: Scuba Diving(Advanced Open Water Diver), <br/> Watercolor & Pencil Drawing, Boardgame, Blogging <br/>
+
+			        </p>
+			      </div>
+			    </article>
+			  </div>
+			  <div class="tile is-parent">
+			    <article class="tile is-child box">
+			      <p class="title"><i class="fas fa-globe-africa"></i></p>
+			      <p class="title">Traveler</p>
+			      <p class="subtitle">
+			      	<br/>
+			      </p>
+			      <div class="content">
+			      	SELECT TOP 5 * FROM PAST_TRIPS <br/>ORDER BY TRAVEL_DATE DESC;
+			        <p>
+			        	Iceland<br/>
+			        	Norway<br/>
+			        	Denmark<br/>
+			        	Ireland<br/>
+			        	Tanzania
+
+			        </p>
+			      </div>
+			      <div class="content">
+			      	SELECT TOP 5 * FROM NEXT_TRIPS <br/>ORDER BY TRAVEL_DATE ASC;
+			        <p>
+			        	Peru<br/>
+			        	Bolivia<br/>
+			        	Chile<br/>
+			        	Argetina<br/>
+			        	Brazil
+			        </p>
+			      </div>
+			    </article>
+			  </div>
+			</div>
+		</div>
+  	</section>
+
+	<!-- WORK -->
+    <section class="section has-text-centered smile-tabs smile-tabs-work">
+    	<div class="container">
+    		
+
+			<!-- EBAY -->
+			<div class="tile is-ancestor">
+			  <div class="tile is-parent">
+			    <article class="tile is-child box">
+			      <p class="title">
+			      	<figure class="image is-128x128 has-image-centered">
+					  <img class="" src="images/ebay_logo.png">
+					</figure>
+			      </p>
+			      <p class="subtitle">Product Manager</p>
+			      <div class="content">
+			        <p>
+			        	Seoul, Korea (08/2012 - Present)
+			        </p>
+			      </div>
+			    </article>
+			  </div>
+			  <div class="tile is-parent is-9">
+			    <article class="tile is-child box work-experience-detail">
+			      <!-- <p class="title">Main column</p> -->
+			      <p class="subtitle">Led and launched “Smile Pay”, which was the first payment gateway system for eBay Korea</p>
+			      <div class="content">
+			        <p>Grew “Smile Pay” to become top 3 largest payment system in Korea with a 11 million user base and $14 billion in transaction volume within the first 2 years of launch</p>
+			        <p>Architected end to end of “Smile Pay”: defined policies, designed wireframes, planned backend workflow & payout processes, built internal tools, and prototyped front-end UI</p>
+			      </div>
+			      <p class="subtitle">Grew the number of users and transaction volume of “Smile Pay” exponentially by utilizing eBay Korea’s existing assets</p>
+			      <div class="content">
+			        <p>Figured out the most effective way to lead customers to sign up and use “Smile Pay” through extensive data analysis(A/B test) and redesigned checkout pages on Gmarket & Auction & G9, online market run by eBay Korea, in a way to nudge customers</p>
+			        <p>Resulted in 50% onboard rate within the first year, 많은 메이저 페이먼트 컴퍼니들이 우리의 방식을 따라했다.</p>
+			      </div>
+			      <p class="subtitle">With some content</p>
+			      <div class="content">
+			        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+			      </div>
+			    </article>
+			  </div>
+			</div>
+
+			<!-- BAIN & COMPANY -->
+			<div class="tile is-ancestor">
+			  <div class="tile is-parent">
+			    <article class="tile is-child box">
+			      <p class="title">
+			      	<figure class="image is-128x128 has-image-centered">
+					  <img class="" src="images/bain_logo.png">
+					</figure>
+
+			      </p>
+			      <p class="subtitle">Intern</p>
+			      <div class="content">
+			        <p>
+			        	Seoul, Korea (01/2012 - 02/2012) 
+			        </p>
+			      </div>
+			    </article>
+			  </div>
+			  <div class="tile is-parent is-9">
+			    <article class="tile is-child box">
+			      <!-- <p class="title">Main column</p> -->
+			      <p class="subtitle">With some content</p>
+			      <div class="content">
+			        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+			      </div>
+			    </article>
+			  </div>
+			</div>
+
+			<!-- SKT -->
+			<div class="tile is-ancestor">
+			  <div class="tile is-parent">
+			    <article class="tile is-child box">
+			      <p class="title">
+			      	<figure class="image is-128x128 has-image-centered">
+					  <img class="" src="images/skt_logo.png">
+					</figure>
+
+			      </p>
+			      <p class="subtitle">Intern</p>
+			      <div class="content">
+			        <p>
+			        	Seoul, Korea (01/2012 - 02/2012) 
+			        </p>
+			      </div>
+			    </article>
+			  </div>
+			  <div class="tile is-parent is-9">
+			    <article class="tile is-child box">
+			      <!-- <p class="title">Main column</p> -->
+			      <p class="subtitle">With some content</p>
+			      <div class="content">
+			        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+			      </div>
+			    </article>
+			  </div>
+			</div>
+    	</div>
+    </section>
+
+
+    <!-- EDUCATION & ACTIVITIES-->
+    <section class="section has-text-centered smile-tabs smile-tabs-education">
+		<div class="container">
+			<div class="tile is-ancestor">
+			  <div class="tile is-parent">
+			    <article class="tile is-child box yonsei-box" style="margin-bottom: 30px!important;">
+			      <p class="title">
+			      	<figure class="has-image-centered">
+					  <img class="yonsei-logo" src="images/yonsei.png">
+					</figure>
+			      </p>
+			      <!-- <p class="title">Yonsei University</p> -->
+			      <p class="subtitle"></p>
+			      <p class="subtitle">Bachelor of Arts in Psychology & Bachelor of Business Administration</p>
+			      
+			      <div class="content">
+			        <p>
+			        	
+			        	Class of 2012 / Seoul, Korea
+			        </p>
+			        <!-- <p>
+			        	Relevant Coursework: Human Computer Interaction, Service Design, Strategic Management
+			        </p> -->
+			      </div>
+			    </article>
+			  </div>
+			</div>
+		</div>
+		<div class="container">
+
+			<article class="message is-primary">
+			  <div class="message-body">
+			  	<strong>Relevant Coursework</strong><br/><br/>
+				Human Computer Interaction, Service Design, Strategic Management
+
+			  </div>
+			</article>
+
+			<article class="message is-link">
+			  <div class="message-body">
+			    <strong>Business Innovation Track - Alumni board member and Vice President</strong><br/><br/>
+				Held alumni gatherings twice a year and proposed enjoyable event for alumni resulting in 100% attendance rate increase <br/>
+				Introduced monthly knowledge sharing sessions offering alumni to share their experience from work, developing positive and productive culture
+			  </div>
+			</article>
+
+			<article class="message is-info">
+			  <div class="message-body">
+			  	<strong>Banteay Prieb(Social enterprise helping education and employment of people with disabilities)</strong><br/><br/>
+				Lived in Cambodia for one month to conduct local market research and analysis and increased its revenue by opening a craft shop in Phnom Penh based on the localized market research <br/>
+				Introduced monthly knowledge sharing sessions offering alumni to share their experience from work, developing positive and productive culture
+
+			  </div>
+			</article>
+			<article class="message">
+			  <div class="message-body">
+			  	<strong>Awards</strong><br/><br/>
+			  	2011 - 2nd Place, Deloitte Consulting Case Competition, Deloitte.                  <br/>
+				2010 - 2nd Place, uGET (undergraduate Global Experience Team-project), ‘Team RICH’, Yonsei University    <br/>
+				2010 - 3rd Place, 6th Amore Pacific Marketing Competition, Amore Pacific                   <br/>
+				2010 - 1st Place, Company 100 Ideas Competition (Designed a new SNS game), Company 100    <br/>
+				2008 - 1st Place, S Design Awards, Yonsei University 
+			  </div>
+			</article>
+		</div>
+  	</section>
+
+	
+
+  	<!-- <div class="container">
+  		
+	  <div class="notification">
+	    This container is <strong>centered</strong> on desktop.
+	  </div>
+
+	  <div class="container">
+	  	<article class="message">
+		  <div class="message-body">
+		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+		  </div>
+		</article>
+		<article class="message is-dark">
+		  <div class="message-body">
+		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+		  </div>
+		</article>
+
+		<article class="message is-primary">
+		  <div class="message-body">
+		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+		  </div>
+		</article>
+
+		<article class="message is-link">
+		  <div class="message-body">
+		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+		  </div>
+		</article>
+
+		<article class="message is-info">
+		  <div class="message-body">
+		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+		  </div>
+		</article>
+
+		<article class="message is-success">
+		  <div class="message-body">
+		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+		  </div>
+		</article>
+
+		<article class="message is-warning">
+		  <div class="message-body">
+		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+		  </div>
+		</article>
+
+		<article class="message is-danger">
+		  <div class="message-body">
+		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+		  </div>
+		</article>
+
+	  </div>
+
+	  <div class="notification">
+	    This container is <strong>centered</strong> on desktop.
+	  </div>
+
+	  <div class="container">
+	  	<div class="tile is-ancestor">
+		  <div class="tile is-vertical is-8">
+		    <div class="tile">
+		      <div class="tile is-parent is-vertical">
+		        <article class="tile is-child notification is-primary">
+		          <p class="title">Vertical...</p>
+		          <p class="subtitle">Top tile</p>
+		        </article>
+		        <article class="tile is-child notification is-warning">
+		          <p class="title">...tiles</p>
+		          <p class="subtitle">Bottom tile</p>
+		        </article>
+		      </div>
+		      <div class="tile is-parent">
+		        <article class="tile is-child notification is-info">
+		          <p class="title">Middle tile</p>
+		          <p class="subtitle">With an image</p>
+		          <figure class="image is-4by3">
+		            <img src="https://bulma.io/images/placeholders/640x480.png">
+		          </figure>
+		        </article>
+		      </div>
+		    </div>
+		    <div class="tile is-parent">
+		      <article class="tile is-child notification is-danger">
+		        <p class="title">Wide tile</p>
+		        <p class="subtitle">Aligned with the right tile</p>
+		        <div class="content">
+		        </div>
+		      </article>
+		    </div>
+		  </div>
+		  <div class="tile is-parent">
+		    <article class="tile is-child notification is-success">
+		      <div class="content">
+		        <p class="title">Tall tile</p>
+		        <p class="subtitle">With even more content</p>
+		        <div class="content">
+		          <img src="images/mj.jpg">
+		        </div>
+		      </div>
+		    </article>
+		  </div>
+		</div>
+	  </div>
+	</div> -->
+  	
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="content has-text-centered">
+			<p>
+			<strong> Minji Kim </strong> by YM Company.
+			</p>
+		</div>
+		<div class="content has-text-centered">
+			<p>
+			Made with 
+			<a href="https://bulma.io">
+		      <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="61" height="14">
+		    </a>
+			</p>
+		</div>
+		
+	</footer>
+  
+  </body>
 </html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+
+	  //main always on smile
+	  hideAllTabs()
+	  $( ".smile-tabs-smile").show();
+
+	  // Check for click events on the navbar burger icon
+	  $(".navbar-burger").click(function() {
+
+	      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+	      $(".navbar-burger").toggleClass("is-active");
+	      $(".navbar-menu").toggleClass("is-active");
+
+	  });
+
+	  $("li.nav-tabs").click(function() {
+
+	      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+	      $("li.nav-tabs").removeClass("is-active");
+	      $(this).addClass("is-active");
+
+	  });
+	});
+
+	function hideAllTabs(){
+		$( ".smile-tabs" ).hide();
+	}
+
+	function showTab(tabType){
+		hideAllTabs();
+
+		$( ".smile-tabs-" + tabType ).show();
+
+
+
+	}
+
+	
+	
+</script>
