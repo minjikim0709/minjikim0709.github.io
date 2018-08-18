@@ -46,6 +46,10 @@
 	.yonsei-box {
 		margin-bottom: 30px!important;
 	}
+
+	.vertical-align-top {
+		vertical-align: top;
+	}
   </style>
   <body>
 
@@ -79,17 +83,17 @@
 
 					  <div class="navbar-end">
 
-					      <a class="navbar-item" onclick="showTab('smile'); return false;">
-					        <span class="icon is-small"><i class="fas fa-heart" aria-hidden="true"></i></span>
-					        <span>Smile</span>
+					      <a class="navbar-item" onclick="showTab('smile'); hideMobileDropdown(); return false;">
+					        <span class="icon"><i class="fas fa-heart" aria-hidden="true"></i></span>
+					        <span class="vertical-align-top">Smile</span>
 					      </a>
-						  <a class="navbar-item" onclick="showTab('work'); return false;">
-						  	<span class="icon is-small"><i class="fas fa-chalkboard" aria-hidden="true"></i></span>
-					        <span>Work</span>
+						  <a class="navbar-item" onclick="showTab('work'); hideMobileDropdown(); return false;">
+						  	<span class="icon"><i class="fas fa-chalkboard" aria-hidden="true"></i></span>
+					        <span class="vertical-align-top">Work</span>
 					      </a>
-					      <a class="navbar-item" onclick="showTab('education'); return false;">
-						  	<span class="icon is-small"><i class="fas fa-graduation-cap" aria-hidden="true"></i></span>
-			        		<span>Education</span>
+					      <a class="navbar-item" onclick="showTab('education'); hideMobileDropdown(); return false;">
+						  	<span class="icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></span>
+			        		<span class="vertical-align-top">Education</span>
 					      </a>
 					      <!-- <a class="navbar-item">
 						  	<span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
@@ -120,22 +124,6 @@
 		  <div class="hero-foot">
 		    
 		  </div>
-
-		  <!-- <div class="hero-foot">
-		    <nav class="tabs is-boxed is-fullwidth">
-		      <div class="container">
-		        <ul>
-		          <li class="is-active"><a>Overview</a></li>
-		          <li><a>Modifiers</a></li>
-		          <li><a>Grid</a></li>
-		          <li><a>Elements</a></li>
-		          <li><a>Components</a></li>
-		          <li><a>Layout</a></li>
-		        </ul>
-		      </div>
-		    </nav>
-		  </div> -->
-
 
 
 		</section>
@@ -182,12 +170,15 @@
 			<div class="tile is-ancestor">
 			  <div class="tile is-parent">
 			    <article class="tile is-child notification message is-info">
-			      <p class="title minji-banner">Minji Kim</p>
-			      <p class="subtitle minji-banner">What is up?</p>
+			      <p class="title minji-banner">Hi, I'm M<a target="_blank" href="https://www.linkedin.com/in/minjikim0709/"><i class="fab fa-linkedin"></i></a>ji. </p>
+			      <!-- <p class="subtitle minji-banner">What is up?</p> -->
 			      <div class="content minji-banner">
 			        <p>
-			        	Wife, Paul Cho Hello Menlo Park
-
+			        	I'm a Product Manager based in Menlo Park, California. <br/>
+			        	I have been working on e-commerce platforms (<a target="_blank" href="https://www.gmarket.co.kr">Gmarket</a> / <a target="_blank" href="https://www.auction.co.kr">Auction</a> / <a target="_blank" href="https://www.g9.co.kr">G9</a>) <br/>
+			        	mainly focusing on Payments, Discount, Incentive and overall Checkout flow.<br/>
+			        	I was a lead Product Manager of the first payment gateway system for ebay Korea <a target="_blank" href="https://www.mysmilepay.com/">Smile Pay</a>.
+			        	<br/>
 
 			        </p>
 			      </div>
@@ -215,25 +206,37 @@
 			      	<br/>
 			      </p>
 			      <div class="content">
+			      	LANGUAGE
 			        <p>
-			        	Language: FEnglish | Korean <br/>
+			        	English | Korean
 
 			        </p>
+			      </div>
+			      <div class="content">
+			      	DESIGN
 			        <p>
-			        	Design: exposure to HTML, CSS, and Photoshop <br/>
-
+						Exposure to HTML, CSS, and Photoshop
 			        </p>
+			      </div>
+			      <div class="content">
+			      	COMPUTER SKILLS
 			        <p>
-						Computer Skills: MS Office | JIRA, Atlassian Wiki <br/>
-
+						MS Office | JIRA, Atlassian Wiki 
 			        </p>
+			      </div>
+			      <div class="content">
+			      	DATA
 			        <p>
-						Data: Google Analytics, exposure to SQL <br/>
-
+						Google Analytics, exposure to SQL
 			        </p>
+			      </div>
+			      <div class="content">
+			      	INTERESTES
 			        <p>
-						Interests: Scuba Diving(Advanced Open Water Diver), <br/> Watercolor & Pencil Drawing, Boardgame, Blogging <br/>
-
+						Scuba Diving(Advanced Open Water Diver) <br/> 
+						Watercolor & Pencil Drawing<br/>
+						Boardgame<br/>
+						Blogging
 			        </p>
 			      </div>
 			    </article>
@@ -297,19 +300,89 @@
 			  <div class="tile is-parent is-9">
 			    <article class="tile is-child box work-experience-detail">
 			      <!-- <p class="title">Main column</p> -->
-			      <p class="subtitle">Led and launched “Smile Pay”, which was the first payment gateway system for eBay Korea</p>
+			      <p class="subtitle">Led and launched “Smile Pay”, top 3 largest payment system in Korea and the first payment gateway system for ebay Korea</p>
 			      <div class="content">
-			        <p>Grew “Smile Pay” to become top 3 largest payment system in Korea with a 11 million user base and $14 billion in transaction volume within the first 2 years of launch</p>
-			        <p>Architected end to end of “Smile Pay”: defined policies, designed wireframes, planned backend workflow & payout processes, built internal tools, and prototyped front-end UI</p>
+			      	  <ul>
+					    <li>
+					      Drove end to end product development of Smile Pay: defined policies, designed wireframes, planned backend workflow payout processes, built
+							internal tools, and prototyped front-end UI
+					    </li>
+					    <li>
+					      Collaborated cross-functionally on a daily basis with UX, Development, Finance, Legal, Security, Marketing and various other business units
+					    </li>
+					  </ul>
 			      </div>
-			      <p class="subtitle">Grew the number of users and transaction volume of “Smile Pay” exponentially by utilizing eBay Korea’s existing assets</p>
+			      <p class="subtitle">Grew the number of users and transaction volume of Smile Pay exponentially by utilizing ebay Korea’s existing assets</p>
 			      <div class="content">
-			        <p>Figured out the most effective way to lead customers to sign up and use “Smile Pay” through extensive data analysis(A/B test) and redesigned checkout pages on Gmarket & Auction & G9, online market run by eBay Korea, in a way to nudge customers</p>
-			        <p>Resulted in 50% onboard rate within the first year, 많은 메이저 페이먼트 컴퍼니들이 우리의 방식을 따라했다.</p>
+			      	  <ul>
+					    <li>
+					      Designed strategies to increase customers to sign up and use Smile Pay through extensive data analysis (A/B test) and redesigned checkout pages of Gmarket and Auction, online markets run by ebay Korea
+					    </li>
+					    <li>
+					      Resulted in 50% on-board rate with a 11 million user base and $14 billion in transaction volume within the first 2 years of launch
+					    </li>
+					  </ul>
 			      </div>
-			      <p class="subtitle">With some content</p>
+			      <p class="subtitle">Developed partnerships with financial institutions and retail companies to attract both partners and users</p>
 			      <div class="content">
-			        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+			          <ul>
+					    <li>
+					      Designed and implemented a unique functionality of Smile Pay to provide partner companies with a platform to promote their cards by displaying the benefits of using their cards and membership points in Smile Pay
+					    </li>
+					    <li>
+					      Partnered with big retailers’ like SPC (Korean No.1 offline food service company), GS (Korean No.1 supermarket and CVS company) to utilize their large network for accelerated growth of Smile Pay
+					    </li>
+					    <li>
+					      New partnerships gave benefit not only to partner companies, but also to users by giving information on helping them pick the most beneficial payment option and enabling them to use Smile Pay on offline retails as well
+					    </li>
+					  </ul>
+			      </div>
+			      <p class="subtitle">Expanded “Smile Pay” for iOS and Android native application</p>
+			      <div class="content">
+			          <ul>
+					    <li>
+					      Coordinated with design and engineering teams to create seamless web-to-app and app-to-app payment user experience and robust FIDO biometric authentication
+					    </li>
+					  </ul>
+			      </div>
+			      <p class="subtitle">Upgraded Gmarket’s discount and reward platform</p>
+			      <div class="content">
+			          <ul>
+					    <li>
+					    	Launched a new discount budget management system for Gmarket enabling Sales and Marketing departments to control their expenses
+					    </li>
+					    <li>
+					    	Increased operating efficiency of discount and reward programs by removing 6 out of 10 previous programs with low usage rates
+					    </li>
+					  </ul>
+			      </div>
+			      <p class="subtitle">Improved team processes</p>
+			      <div class="content">
+			          <ul>
+					    <li>
+					      Enhanced operational work productivity of PM, Development, and Finance departments, by adding features on internal tools to automate day-to-day works such as reconciliation of payment data and CS supports
+					    </li>
+					    <li>
+					      Analyzed and systemized finance backend processes and transferred knowledge to team members
+					    </li>
+					    <li>
+					      Received “Hidden Champion of the Department Award” for supporting and helping other people’s work inside and outside of the team
+					    </li>
+					  </ul>
+			      </div>
+
+			      <p class="subtitle">Awards</p>
+			      <div class="content">
+			          <ul>
+					    <li>
+					      Culture Luminary Awards (ebay Global Excellence Awards, 2017) <br/>
+							Received an award for launching “Smile Pay” and attended ebay global leadership training program held in Singapore
+					    </li>
+					    <li>
+					      Mobile Business Idea Competition, 1st place out of 176 teams(ebay Korea, 2015)<br/>
+					      Won and awarded for proposing a new mobile advertising platform, implemented as a service in production
+					    </li>
+					  </ul>
 			      </div>
 			    </article>
 			  </div>
@@ -334,13 +407,15 @@
 			    </article>
 			  </div>
 			  <div class="tile is-parent is-9">
-			    <article class="tile is-child box">
+			    <article class="tile is-child box box work-experience-detail">
 			      <!-- <p class="title">Main column</p> -->
-			      <p class="subtitle">With some content</p>
+			      <p class="subtitle">Due diligence project on a Korean confectionery company</p>
 			      <div class="content">
-			        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-			        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-			        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+			          <ul>
+					    <li>
+					      Analyzed financial balance sheets income statements and conducted market research of Korean confectionery market leaders to provide insight for the client to achieve its goal on a company acquisition
+					    </li>
+					  </ul>
 			      </div>
 			    </article>
 			  </div>
@@ -359,17 +434,21 @@
 			      <p class="subtitle">Intern</p>
 			      <div class="content">
 			        <p>
-			        	Seoul, Korea (01/2012 - 02/2012) 
+			        	Seoul, Korea (07/2011 - 08/2011) 
 			        </p>
 			      </div>
 			    </article>
 			  </div>
 			  <div class="tile is-parent is-9">
-			    <article class="tile is-child box">
+			    <article class="tile is-child box box work-experience-detail">
 			      <!-- <p class="title">Main column</p> -->
-			      <p class="subtitle">With some content</p>
+			      <!-- <p class="subtitle">Due diligence project on a Korean confectionery company</p> -->
 			      <div class="content">
-			        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+			          <ul>
+					    <li>
+					      Conducted focus group interviews and developed new strategies for No.1 navigation service in Korea “T map”
+					    </li>
+					  </ul>
 			      </div>
 			    </article>
 			  </div>
@@ -398,9 +477,6 @@
 			        	
 			        	Class of 2012 / Seoul, Korea
 			        </p>
-			        <!-- <p>
-			        	Relevant Coursework: Human Computer Interaction, Service Design, Strategic Management
-			        </p> -->
 			      </div>
 			    </article>
 			  </div>
@@ -418,149 +494,52 @@
 
 			<article class="message is-link">
 			  <div class="message-body">
-			    <strong>Business Innovation Track - Alumni board member and Vice President</strong><br/><br/>
-				Held alumni gatherings twice a year and proposed enjoyable event for alumni resulting in 100% attendance rate increase <br/>
-				Introduced monthly knowledge sharing sessions offering alumni to share their experience from work, developing positive and productive culture
+			    <strong>Business Innovation Track - Alumni board member and Vice President (03/2010 - Present)</strong><br/><br/>
+			      <!-- <ul>
+				    <li>
+				      - Held alumni gatherings twice a year
+				    </li>
+				    <li>
+				      Hosted workshops taught by alumni to share their experience from work, developing productive culture
+				    </li>
+				    <li>
+				      Mentored 3 undergraduate students in Yonsei University
+				    </li>
+				  </ul> -->
+			    - Held alumni gatherings twice a year<br/>
+				- Hosted workshops taught by alumni to share their experience from work, developing productive culture<br/>
+				- Mentored 3 undergraduate students in Yonsei University<br/>
 			  </div>
 			</article>
 
 			<article class="message is-info">
 			  <div class="message-body">
-			  	<strong>Banteay Prieb(Social enterprise helping education and employment of people with disabilities)</strong><br/><br/>
-				Lived in Cambodia for one month to conduct local market research and analysis and increased its revenue by opening a craft shop in Phnom Penh based on the localized market research <br/>
-				Introduced monthly knowledge sharing sessions offering alumni to share their experience from work, developing positive and productive culture
-
+			  	<strong>Banteay Prieb(Social enterprise) (05/2010 - 09/2010)</strong><br/><br/>
+				- Supported a social enterprise in Cambodia, helping education and employment of people with disabilities<br/>
+				- Lived in Cambodia for one month to conduct market research and opened a craft shop, increasing its revenue
 			  </div>
 			</article>
 			<article class="message">
 			  <div class="message-body">
 			  	<strong>Awards</strong><br/><br/>
-			  	2011 - 2nd Place, Deloitte Consulting Case Competition, Deloitte.                  <br/>
-				2010 - 2nd Place, uGET (undergraduate Global Experience Team-project), ‘Team RICH’, Yonsei University    <br/>
-				2010 - 3rd Place, 6th Amore Pacific Marketing Competition, Amore Pacific                   <br/>
-				2010 - 1st Place, Company 100 Ideas Competition (Designed a new SNS game), Company 100    <br/>
-				2008 - 1st Place, S Design Awards, Yonsei University 
+			  	- 2nd Place, Deloitte Consulting Case Competition, Deloitte (2011)                  <br/>
+				- 2nd Place, uGET (undergraduate Global Experience Team-project), ‘Team RICH’, Yonsei University (2010)    <br/>
+				- 3rd Place, 6th Amore Pacific Marketing Competition, Amore Pacific (2010)                  <br/>
+				- 1st Place, Company 100 Ideas Competition (Designed a new SNS game), Company 100 (2010)    <br/>
+				- 1st Place, S Design Awards, Yonsei University (2008)
 			  </div>
 			</article>
 		</div>
   	</section>
 
-	
-
-  	<!-- <div class="container">
-  		
-	  <div class="notification">
-	    This container is <strong>centered</strong> on desktop.
-	  </div>
-
-	  <div class="container">
-	  	<article class="message">
-		  <div class="message-body">
-		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-		  </div>
-		</article>
-		<article class="message is-dark">
-		  <div class="message-body">
-		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-		  </div>
-		</article>
-
-		<article class="message is-primary">
-		  <div class="message-body">
-		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-		  </div>
-		</article>
-
-		<article class="message is-link">
-		  <div class="message-body">
-		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-		  </div>
-		</article>
-
-		<article class="message is-info">
-		  <div class="message-body">
-		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-		  </div>
-		</article>
-
-		<article class="message is-success">
-		  <div class="message-body">
-		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-		  </div>
-		</article>
-
-		<article class="message is-warning">
-		  <div class="message-body">
-		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-		  </div>
-		</article>
-
-		<article class="message is-danger">
-		  <div class="message-body">
-		    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
-		  </div>
-		</article>
-
-	  </div>
-
-	  <div class="notification">
-	    This container is <strong>centered</strong> on desktop.
-	  </div>
-
-	  <div class="container">
-	  	<div class="tile is-ancestor">
-		  <div class="tile is-vertical is-8">
-		    <div class="tile">
-		      <div class="tile is-parent is-vertical">
-		        <article class="tile is-child notification is-primary">
-		          <p class="title">Vertical...</p>
-		          <p class="subtitle">Top tile</p>
-		        </article>
-		        <article class="tile is-child notification is-warning">
-		          <p class="title">...tiles</p>
-		          <p class="subtitle">Bottom tile</p>
-		        </article>
-		      </div>
-		      <div class="tile is-parent">
-		        <article class="tile is-child notification is-info">
-		          <p class="title">Middle tile</p>
-		          <p class="subtitle">With an image</p>
-		          <figure class="image is-4by3">
-		            <img src="https://bulma.io/images/placeholders/640x480.png">
-		          </figure>
-		        </article>
-		      </div>
-		    </div>
-		    <div class="tile is-parent">
-		      <article class="tile is-child notification is-danger">
-		        <p class="title">Wide tile</p>
-		        <p class="subtitle">Aligned with the right tile</p>
-		        <div class="content">
-		        </div>
-		      </article>
-		    </div>
-		  </div>
-		  <div class="tile is-parent">
-		    <article class="tile is-child notification is-success">
-		      <div class="content">
-		        <p class="title">Tall tile</p>
-		        <p class="subtitle">With even more content</p>
-		        <div class="content">
-		          <img src="images/mj.jpg">
-		        </div>
-		      </div>
-		    </article>
-		  </div>
-		</div>
-	  </div>
-	</div> -->
   	
 
 	<!-- FOOTER -->
 	<footer class="footer">
 		<div class="content has-text-centered">
 			<p>
-			<strong> Minji Kim </strong> by YM Company.
+				<strong>© 2018 MINJI KIM</strong>
+			<!-- <strong> Minji Kim </strong> by YM Company. -->
 			</p>
 		</div>
 		<div class="content has-text-centered">
@@ -614,6 +593,10 @@
 
 
 
+	}
+
+	function hideMobileDropdown(){
+		$(".navbar-burger").click();
 	}
 
 	
